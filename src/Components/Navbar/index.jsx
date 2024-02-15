@@ -5,11 +5,11 @@ const Navbar = () => {
     return (
         <header className='container flex items-center justify-between py-4'>
             <div > <NavLink className="text-[36px] font-bold text-black" to="/">Logo</NavLink></div>
-            <nav className='flex gap-2 font-medium'>
-                <NavLink to="/haqqimizda">Haqqımızda</NavLink>
-                <NavLink to="/kitablar">Kitablar</NavLink>
-                <NavLink to="/imtahanlar">İmtahanlar</NavLink>
-                <NavLink to="/elaqe">Bizimlə əlaqə</NavLink>
+            <nav className='flex gap-2 font-medium '>
+                <NavLink className='hover:text-[red] duration-300' to="/haqqimizda">Haqqımızda</NavLink>
+                <NavLink className='hover:text-[red] duration-300' to="/kitablar">Kitablar</NavLink>
+                <NavLink className='hover:text-[red] duration-300' to="/imtahanlar">İmtahanlar</NavLink>
+                <NavLink className='hover:text-[red] duration-300' to="/elaqe">Bizimlə əlaqə</NavLink>
             </nav>
             <div className='flex gap-2'>
                 <NavLink className="border p-2 rounded-xl hover:bg-black hover:text-white  duration-500" to="/daxilol">Daxil ol</NavLink>
