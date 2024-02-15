@@ -1,48 +1,7 @@
 import React, { useState } from 'react'
+import { categories } from '../../data';
 
-const categories = [
-    {
-        id: 1,
-        title: "Buraxılış",
-        category: 'buraxilis'
-    },
-    {
-        id: 2,
-        title: "Blok",
-        category: 'blok'
-    },
-    {
-        id: 3,
-        title: "Təkmilləşmə",
-        category: 'tekmillesme'
-    },
-    {
-        id: 4,
-        title: "İbtidai sinif",
-        category: 'ibtidai'
-    },
-    {
-        id: 5,
-        title: "Liseylərə",
-        category: 'lisey'
-    },
-    {
-        id: 6,
-        title: "Magistratura",
-        category: 'magistratura'
-    },
-    {
-        id: 7,
-        title: "Olimpiadalar",
-        category: 'olimpiada'
 
-    },
-    {
-        id: 8,
-        title: "Fənn imtahanı",
-        category: 'fenn'
-    },
-]
 const Category = () => {
     const [category, setCategory] = useState("")
 

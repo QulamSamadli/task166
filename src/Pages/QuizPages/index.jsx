@@ -7,6 +7,7 @@ import "swiper/css";
 
 import "../../index.css";
 import Category from '../../Components/Category';
+import Filter from '../../Components/Filter';
 
 const Quiz = () => {
   return (
@@ -52,6 +53,7 @@ const Quiz = () => {
       
       </Swiper>
       <Category/>
+      <Filter/>
       </>
   
   )
