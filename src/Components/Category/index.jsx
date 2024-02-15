@@ -8,7 +8,7 @@ const Category = () => {
     console.log(category);
 
     return (
-        <div className='container grid grid-cols-1 text-center'>
+        <div className='container grid grid-cols-1 text-center my-20'>
             <div className='text-center my-6'>
                 <p>İmtahan</p>
                 <h2 className='text-[36px] font-bold'>Kateqoriya seç</h2>
