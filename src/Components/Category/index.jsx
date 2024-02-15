@@ -3,27 +3,33 @@ import React, { useState } from 'react'
 const categories = [
     {
         id: 1,
-        title: "Buraxılış"
+        title: "Buraxılış",
+        category: 'buraxilis'
     },
     {
         id: 2,
-        title: "Blok"
+        title: "Blok",
+        category: 'blok'
     },
     {
         id: 3,
-        title: "Təkmilləşmə"
+        title: "Təkmilləşmə",
+        category: 'tekmillesme'
     },
     {
         id: 4,
-        title: "İbtidai sinif"
+        title: "İbtidai sinif",
+        category: 'ibtidai'
     },
     {
         id: 5,
-        title: "Liseylərə"
+        title: "Liseylərə",
+        category: 'lisey'
     },
     {
         id: 6,
-        title: "Magistratura"
+        title: "Magistratura",
+        category: 'magistratura'
     },
     {
         id: 7,
@@ -34,7 +40,7 @@ const categories = [
     {
         id: 8,
         title: "Fənn imtahanı",
-        category: 'buraxilis'
+        category: 'fenn'
     },
 ]
 const Category = () => {
@@ -43,15 +49,15 @@ const Category = () => {
     console.log(category);
 
     return (
-        <div className='container '>
+        <div className='container grid grid-cols-1 text-center'>
             <div className='text-center my-6'>
-                <p>asd</p>
-                <h2>asdas</h2>
+                <p>İmtahan</p>
+                <h2>Kateqoriya seç</h2>
             </div>
-            <div className='grid grid-cols-4 '>
+            <div className='grid grid-cols-4 gap-2 '>
                 {
                     categories.map(({ id, title, category }) => {
-                        return <div onClick={() => {
+                        return <div className='border rounded-xl p-4' onClick={() => {
                             setCategory(category)
                         }} key={id}>{title}</div>
                     })
