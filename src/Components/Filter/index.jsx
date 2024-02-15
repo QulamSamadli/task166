@@ -16,17 +16,17 @@ const Filter = () => {
 ]'>Kategoriyalar</p>
           {
             categories.map(({ id, title }) => (
-              <button className='bg-[red] w-[244px] border rounded-lg text-left p-4 my-1' key={id}>
+              <button className='bg-[#F5F5F5] w-[244px] border rounded-lg text-left p-3 my-1' key={id}>
                 {title}
               </button>
             ))
           }
-          <div className='flex flex-col '>
+          <div className='flex flex-col  '>
             <p>Etiketlər</p>
             {categories.map(category => (
               category.sinif ? (
                 category.sinif.map(({ id, sin }) => (
-                  <button className='bg-[red] w-[244px] border rounded-lg text-left p-3 my-1' key={id}>
+                  <button className='bg-[#F5F5F5] w-[244px] border rounded-lg text-left p-3 my-1' key={id}>
                     {sin}
                   </button>
                 ))
