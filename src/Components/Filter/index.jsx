@@ -3,7 +3,7 @@ import { categories, details } from '../../data';
 
 const Filter = () => {
   return (
-    <div className='container grid grid-cols-2 '>
+    <div className='container flex '>
       <div className='grid grid-cols-1 items-start gap-2'>
       <h2>Filter</h2>
         {
