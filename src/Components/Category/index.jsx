@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
-import { categories } from '../../data';
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
 
 
 const Category = () => {
-    const [category, setCategory] = useState("")
+    const [categories, setCategories] = useState([])
 
-    console.log(category);
-
+    useEffect(() => {
+        axios.get(import.meta.env.VITE_DB_URL  + "categories").then(({data}) => {
+          setCategories(data)
+        })
+      },[])
     return (
         <div className='container grid grid-cols-1 text-center my-20'>
             <div className='text-center my-6'>
@@ -17,7 +20,6 @@ const Category = () => {
                 {
                     categories.map(({ id, title, category }) => {
                         return <button className='shadow-[4px_4px_8px_0px_#0000000D] font-semibold  p-4 h-[60px] bg-[#FAFAFA] border rounded-xl ' onClick={() => {
-                            setCategory(category)
                         }} key={id}>{title}</button>
                     })
                 }
