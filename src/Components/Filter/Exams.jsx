@@ -19,7 +19,7 @@ const Exams = ({ activeCategory, activeClass }) => {
     });
   }, []);
   return (
-    <div className="grid grid-cols-3 gap-4 ">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
       {activeExams.map(
         ({
           time,

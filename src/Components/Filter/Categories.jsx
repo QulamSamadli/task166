@@ -16,7 +16,7 @@ const Categories = ({
     });
   }, []);
   return (
-    <div className="flex flex-col my-6">
+    <div className="flex flex-col items-center md:items-start my-6">
       <h2 className="text-[20px] font-semibold">Filter</h2>
       <p
         className="text-[14px] text-[background: #00000099;
@@ -33,8 +33,8 @@ const Categories = ({
           })}
           key={id}
           onClick={() => {
-            setActiveCategory(category)
-            setActiveClass(0)
+            setActiveCategory(category);
+            setActiveClass(0);
           }}
         >
           {title}
@@ -42,7 +42,7 @@ const Categories = ({
       ))}
 
       {activeCategory === "ibtidai" && (
-        <div className="flex flex-col ">
+        <div className="flex flex-col items-center md:items-start ">
           <p>Etiketler</p>
 
           {categories
@@ -50,12 +50,11 @@ const Categories = ({
             ?.classes.map((item) => {
               return (
                 <button
-                className={classNames({
-                  "bg-[#F5F5F5] w-[244px] border rounded-lg text-left p-3 my-1": true,
-                  "bg-slate-900 text-white": item.class === activeClass,
-                })}
+                  className={classNames({
+                    "bg-[#F5F5F5] w-[244px] border rounded-lg text-left p-3 my-1": true,
+                    "bg-slate-900 text-white": item.class === activeClass,
+                  })}
                   key={item.id}
-
                   onClick={() => setActiveClass(item.class)}
                 >
                   {item.title}
