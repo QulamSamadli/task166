@@ -132,6 +132,9 @@ const Contact = () => {
         <img src="./rating.png" alt="" />
         </div>
       </div>
+      <div className="container">
+        <div></div>
+      </div>
     </>
   );
 };
