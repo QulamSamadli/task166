@@ -33,7 +33,7 @@ const Exams = ({ activeCategory, activeClass }) => {
         }) => {
           return (
             <div
-              className=" bg-[#FAFAFA] flex flex-col gap-4 border border-[#FAFAFA] p-6"
+              className=" bg-[#FAFAFA] flex flex-col gap-4 border h-[380px] rounded border-[#FAFAFA] p-6"
               key={id}
             >
               <h2 className="text-[20px] font-bold">{title}</h2>
