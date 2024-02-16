@@ -1,19 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Responsive = ({ setOpen, hamburger = false }) => {
+const Responsive = ({ setOpen,hamburger=false }) => {
   const closeMenu = () => {
     setOpen(false);
   };
   return (
-    <header
-      className={`flex  flex-col  p-4 gap-4 rounded-md bg-[#D9D9D9] border w-[100%] items-center  justify-center h-[100%] top-0 fixed  left-[0]  z-10  ${
+    <div className={`flex  flex-col  p-4 gap-4 rounded-md bg-[#D9D9D9] border w-[100%] items-center  justify-center h-[100%] top-0 fixed  left-[0]  z-10  ${
         hamburger ? "translate-x-0" : "translate-x-[100%]"
-      }`}
-    >
-      <button className="text-[60px] font-bold" onClick={closeMenu}>
-        X
-      </button>
+      }`}>
+      <button onClick={closeMenu}>Xxxxxx</button>
       <div>
         <NavLink onClick={closeMenu} to="/">
           Logo
@@ -41,7 +37,7 @@ const Responsive = ({ setOpen, hamburger = false }) => {
           Qeydiyyat
         </NavLink>
       </div>
-    </header>
+    </div>
   );
 };
 
