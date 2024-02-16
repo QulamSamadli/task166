@@ -20,7 +20,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 items-end gap-4 my-2 ">
-          <div className="grid md:grid-cols-4 grid-cols-1 gap-4 text-[18px] font-medium">
+          <div className="grid md:grid-cols-4 grid-cols-1  text-[18px] font-medium">
             <NavLink
               className=" hover:text-[red] duration-300"
               to="/haqqimizda"
