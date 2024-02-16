@@ -38,19 +38,19 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex gap-6 container justify-center my-8">
-        <div className=" flex flex-col gap-6 p-6 border rounded-lg shadow-[4px_4px_8px_4px_#0000000D]">
+      <div className="flex flex-wrap gap-6 container justify-center my-8">
+        <div className=" flex flex-col flex-wrap gap-6 p-6 border rounded-lg shadow-[4px_4px_8px_4px_#0000000D]">
           <h2 className="text-[32px] font-bold">Məlumat</h2>
           <div className="flex gap-8">
-            <p className="flex items-center gap-2">
+            <p className="flex items-center gap-2 flex-wrap justify-center">
               <FaClock />
               45 dəqiqə
             </p>
-            <p className="flex items-center gap-2">
+            <p className="flex items-center gap-2 flex-wrap justify-center">
               <GrNotes />
               20 sual
             </p>
-            <p className="flex items-center gap-2">
+            <p className="flex items-center gap-2 flex-wrap justify-center">
               
               <FaCalendar />
               22.05.2023 hazırlanıb
@@ -126,8 +126,11 @@ const Contact = () => {
          </div>
         </div>
       </div>
-      <div className="container">
-        <h2>Reyler</h2>
+      <div className="container my-8">
+        <div className="flex flex-col items-center gap-8">
+        <h2 className="text-[36px] font-bold my-6">Rəylər</h2>
+        <img src="./rating.png" alt="" />
+        </div>
       </div>
     </>
   );
